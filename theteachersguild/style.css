@@ -1,0 +1,93 @@
+body{
+    margin: -10px;
+}
+
+#navbar{
+    background-color: #FFC40C;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+}
+#subnav{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 70px;
+    align-items: center;
+}
+
+#subnav a{
+    margin: 3%;
+    text-decoration: none;
+    font-family: 'Brandon Grotesque', Arial, sans-serif;
+    font-weight: 600;
+    font: bolder;
+    font-size: small;
+}
+.link-nav:hover{
+    color: black;
+}
+.link-nav{
+    color: #FFFFFF;
+}
+
+img{
+    max-width: 100%;
+    margin-top: 8px;
+    margin-left: 2%;
+    width: 240px;
+    padding: 10px;
+}
+
+.check123{
+    background-color: #2A2A2A;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 10% 1% 10%;
+    padding-bottom: 1.5%;
+    position: sticky;
+    top: 62px;
+    z-index: 5;
+}
+
+.check123 button{
+    background-color: #2A2A2A;
+    color:  #FFC40C;
+    border-color: #FFC40C;
+    padding: 20px 50px 20px 50px;
+    font-size: 15px;
+}
+.check123 button:hover{
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #273C48;
+}
+.check123 p{
+    text-align: center;
+    font-size: 19px;
+
+}
+.midsection{
+    padding: 90px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.midsection img{
+    width: 50px;
+}
+.midsection>h1{
+    font-family: Jubilat, Georgia, sans-serif;
+    color: #273c48;
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 200;
+    text-align: center;
+}

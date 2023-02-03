@@ -1,0 +1,96 @@
+body{
+  background: black;
+  color: white;
+}
+
+.links img{
+  width:6vw;
+  margin: 10px;
+  border-radius: 40px;
+}
+.links{
+display:flex;
+flex-direction: column;
+position: fixed;
+right: 0;
+top: 25vh;
+
+}
+
+.front{
+  display: flex;
+  align-items: center;
+margin: -20px 0px 0px -10px;
+}
+
+.second{
+  margin-top: 10vh;
+}
+
+.page{
+height:95vh;
+width: 98.5vw;
+}
+.educard{
+  border: inset 3px ;
+  margin: 5vh 20vw 5vh 5vw;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.typed-out { 
+	font: bold 8vw Consolas, Monaco, monospace;
+	border-right: .1em solid white;
+	width: 8ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 5s steps(8, end), blink-caret .5s step-end infinite alternate;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top:0;
+  background-color: black;
+
+}
+
+#navbar a{
+  color: white;
+  text-decoration: none;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -webkit-fill-available;
+}
+
+#navbar a:hover{
+  background-color: darkgrey;
+  color: black;
+}
+
+#education{
+  padding:100px
+}
+
+.educard img{
+  float:left;
+}
+
+img{
+  
+  background-color: black;
+}
+.edutolltip{
+  display: inline;
+  position: relative;
+  top: -145px;
+  left: -10px;
+  background-color: black;
+  font-size: 25px;
+}
