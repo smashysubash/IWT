@@ -35,6 +35,7 @@ width: 98.5vw;
   border: inset 3px ;
   margin: 5vh 20vw 5vh 20vw;
   padding: 5vh 5vw 0vh 5vw;
+  height: 120px;
 }
 
 @-webkit-keyframes typing { from { width: 0; } }
@@ -84,25 +85,33 @@ width: 98.5vw;
 }
 
 .badge-img{
-  position: relative;
-  top: -20vh;
-  left: 45vw;
+  position: absolute;
+  top: 113vh;
+  left: 71vw;
+  background: none;
+}
+.badge-img2{
+  position: absolute;
+  top: 145vh;
+  left: 71vw;
   background: none;
 }
 .badge-txt2{
+  max-width: fit-content;
   color: blue;
   font-weight: bolder;
-  position: relative;
-  top: -21vh;
-  left: 38vw;
+  position: absolute;
+  top: 117vh;
+  left: 75vw;
   background: none;
 }
 .badge-txt{
   color: blue;
   font-weight: bolder;
-  position: relative;
-  top: -20vh;
-  left: 38vw;
+  position: absolute;
+  top: 150vh;
+  left: 75vw;
+  max-width: fit-content;
   background: none;
 }
 img{
@@ -111,9 +120,17 @@ img{
 }
 .edutolltip{
   display: inline;
-  position: relative;
-  top: -23vh;
-  left: -13vw;
+  position: absolute;
+  top: 107vh;
+  left: 25vw;
+  background-color: black;
+  font-size: 25px;
+}
+.edutolltip2{
+  display: inline;
+  position: absolute;
+  top: 137vh;
+  left: 25vw;
   background-color: black;
   font-size: 25px;
 }
