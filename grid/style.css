@@ -1,0 +1,36 @@
+body{
+    display: grid;
+    grid-template-columns: 35vw 35vw auto;
+}
+
+#header{
+    grid-column: 1/4;
+    text-align: center;
+    border: solid black 1px;
+}
+#main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: solid black 1px;
+    min-height: 60vh;
+}
+
+.article{
+    grid-column: 1/2;
+    border: solid black 1px; 
+    min-height: 30vh;
+}
+.sectn{
+    grid-column: 2/3;
+    border: solid black 1px; 
+}
+aside{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    border: solid black 1px; 
+}
+footer{
+    grid-column: 1/4;
+    text-align: center;
+    border: solid black 1px;
+}

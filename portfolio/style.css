@@ -43,7 +43,7 @@ width: 98.5vw;
 
 .typed-out { 
 	font: bold 8vw Consolas, Monaco, monospace;
-	border-right: .1em solid white;
+	border-right: .1em solid purple;
 	width: 8ch;
 	margin: 2em 1em;
 	white-space: nowrap;
@@ -56,9 +56,12 @@ width: 98.5vw;
   justify-content: space-evenly;
   position: sticky;
   top:0;
-  background-color: black;
+  /* background-color: black; */
   z-index: 2;
-
+  background-color: purple;
+  margin-top: -8px;
+  margin-left: -8px;
+  width: 100vw;
 }
 
 #navbar a{
@@ -102,7 +105,7 @@ width: 98.5vw;
   font-weight: bolder;
   position: absolute;
   top: 117vh;
-  left: 75vw;
+  left: 74vw;
   background: none;
 }
 .badge-txt{
@@ -110,7 +113,7 @@ width: 98.5vw;
   font-weight: bolder;
   position: absolute;
   top: 150vh;
-  left: 75vw;
+  left: 74vw;
   max-width: fit-content;
   background: none;
 }
@@ -181,4 +184,14 @@ img{
 .skill-box h1{
   max-width: fit-content;
   border-bottom: 2px solid white;
+}
+#footer{
+  width: 100vw;
+  text-align: center;
+  background-color: purple;
+  margin-left: -8px;
+  margin-bottom: -8px;
+  height: 5vh;
+  color: white;
+  font-size: larger;
 }
