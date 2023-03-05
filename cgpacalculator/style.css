@@ -1,4 +1,146 @@
 .single-line{
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+    text-align: center;
+    margin: 10px;
+    height: 38px;
+    background-color: rgba(249,233,245,1);
+}
+.single-line:hover{
+    background-color: #DB01FD;
+}
+body{
+    background-color: #330055;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%233a015d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23410165' cx='50' cy='100' r='50'/%3E%3Cg fill='%2348026e' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23500376' cx='50' cy='200' r='50'/%3E%3Cg fill='%2357047e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f0587' cx='50' cy='300' r='50'/%3E%3Cg fill='%2367068f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f0798' cx='50' cy='400' r='50'/%3E%3Cg fill='%237707a0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238008a9' cx='50' cy='500' r='50'/%3E%3Cg fill='%238909b1' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239109ba' cx='50' cy='600' r='50'/%3E%3Cg fill='%239a09c3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a309cb' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ad09d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b608dc' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c007e5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c905ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d303f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    font-family: cursive;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title>h1{
+    border: solid 1px black;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    width: fit-content;
+    border-radius: 20px;
+    color: #9615DB;
+}
+.content-box{
+    background-color: white;
+    color: black;
+    border: solid 1px #9615DB;
+    width: 60vw;
+    padding: 10px 20px 30px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+input{
+    font-family: inherit;
+    border:solid 1px #9615DB;
+}
+
+.content-box>h2{
+    padding-left: 5vw;
+}
+.subj{
+    text-align: center;
+    max-width: 200px;
+    width: 40%;
+    height: 28px;
+}
+.credit {
+    width: 100px;
+    height: 28px;
+    text-align: center;
+}
+.grade{
+    height: 28px;
+    border-color: #9615DB;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(249,233,245,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  
+    backface-visibility: 0.5; 
+    height: 44px;
+    z-index: 2;
+}
+#semadd{
+    margin-left: 10vw;
+}
+#calc{
+    margin-right: 10vw;
+}
+
+/* CSS */
+button {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #9615DB;
+  box-sizing: border-box;
+  color: #9615DB;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 600;
+  height: 32px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  border-color: #000;
+  color: #000;
+  fill: #000;
+}
+#result-box{
+    position: fixed;
+    width: 30vw;
+    background-color: white;
+    float: left;
+    top: 118px;
+    right: 2vw;
+    border-radius: 20px;
+}
+#container {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+}
+
+svg {
+    height: 120px;
+    width: 200px;
+    fill: none;
+    stroke: #9615DB;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+#semresult{
+    height: 200px;
+    text-align: center;
 }

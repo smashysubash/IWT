@@ -1,113 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js"></script><script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+    <div class="title"><h1>CGPA Calculator</h1></div>
     <div class="sem-box">
-    <div class="content-box">
-        <h3>Semester 1</h3>
-        <div class="single-line">
-            <label>Course Name</label>
-            <label>Credit</label>
-            <label>Grade</label>
+        <div class="content-box" id="semester1">
+            <h2>Semester 1</h2>
+            <div class="single-line">
+                <p>S.No</p>
+                <p style="max-width: 200px; width: 40%;">Course Name</p>
+                <p style="width: 100px;">Credit</p>
+                <p style="width: 80px;">Grade</p>
+            </div>
+            <div id="first_con"></div>
+            <button onclick="addcourse(this)">Add Course</button>
+            <button onclick="calcgpa(this)">Calculate GPA</button>
+            <br>
+            <div class="gpares"></div>
         </div>
-        <div>
-        <div class="single-line">
-            <input type="text" class="subj" placeholder="Course 1">
-            <input type="number" class="credit" min="0" max="10" oninput="checkgradeselection(this)" step="0.5" >
-            <select class="grade" onchange="checkcreditselection(this)">
-                <option value="0"></option>
-                <option value="10">O</option>
-                <option value="9">A+</option>
-                <option value="8">A</option>
-                <option value="7">B+</option>
-                <option value="6">B</option>
-                <option value="0">RA</option>
-                <option value="0">AB/W/SA</option>
-            </select>
-        </div>
-        <div class="single-line">
-            <input type="text" class="subj" placeholder="Course 2">
-            <input type="number" class="credit" min="0" max="10" step="0.5" oninput="checkgradeselection(this)" >
-            <select class="grade">
-                <option value="0"></option>
-                <option value="10">O</option>
-                <option value="9">A+</option>
-                <option value="8">A</option>
-                <option value="7">B+</option>
-                <option value="6">B</option>
-                <option value="0">RA</option>
-                <option value="0">AB/W/SA</option>
-            </select>
-        </div>
-        <div class="single-line">
-            <input type="text" class="subj" placeholder="Course 3">
-            <input type="number" class="credit" min="0" max="10" step="0.5" oninput="checkgradeselection(this)">
-            <select class="grade">
-                <option value="0"></option>
-                <option value="10">O</option>
-                <option value="9">A+</option>
-                <option value="8">A</option>
-                <option value="7">B+</option>
-                <option value="6">B</option>
-                <option value="0">RA</option>
-                <option value="0">AB/W/SA</option>
-            </select>
-        </div>
-        <div class="single-line">
-            <input type="text" class="subj" placeholder="Course 4">
-            <input type="number" class="credit" min="0" max="10" step="0.5" oninput="checkgradeselection(this)">
-            <select class="grade">
-                <option value="0"></option>
-                <option value="10">O</option>
-                <option value="9">A+</option>
-                <option value="8">A</option>
-                <option value="7">B+</option>
-                <option value="6">B</option>
-                <option value="0">RA</option>
-                <option value="0">AB/W/SA</option>
-            </select>
-        </div>
-        <div class="single-line">
-            <input type="text" class="subj" placeholder="Course 5">
-            <input type="number" class="credit" min="0" max="10" step="0.5" oninput="checkgradeselection(this)">
-            <select class="grade">
-                <option value="0"></option>
-                <option value="10">O</option>
-                <option value="9">A+</option>
-                <option value="8">A</option>
-                <option value="7">B+</option>
-                <option value="6">B</option>
-                <option value="0">RA</option>
-                <option value="0">AB/W/SA</option>
-            </select>
-        </div>
-        <div class="single-line">
-            <input type="text" class="subj" placeholder="Course 6">
-            <input type="number" class="credit" min="0" max="10" step="0.5" oninput="checkgradeselection(this)">
-            <select class="grade">
-                <option value="0"></option>
-                <option value="10">O</option>
-                <option value="9">A+</option>
-                <option value="8">A</option>
-                <option value="7">B+</option>
-                <option value="6">B</option>
-                <option value="0">RA</option>
-                <option value="0">AB/W/SA</option>
-            </select>
-        </div>
-        </div>
-        <button onclick="addcourse(this)">Add Course</button>
     </div>
+    <div class="footer">
+        <button id="semadd" onclick="addsemester()">Add Semester</button>
+        <button id="calc" onclick="calcsem()">Calculate CGPA</button>
     </div>
-    <button onclick="addsemester()">Add Semester</button>
-    <button onclick="calcsem()">Calculate</button>
-    <p id="result"></p>
-</body>
+    <div id="result-box">
+        <div id="gparesult">
+        </div>
+        <div id="semresult">
+            <hr style="color:#9615DB;">
+            <h2>CGPA</h2>
+            <div id="container"></div>
+        </div>
+    </div>
+        <script>injectfirst();</script>
+    </body>
 </html>
